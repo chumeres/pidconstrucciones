@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content=" Somos una empresa de diseño, desarrollo y ejecución de proyectos de construcción con más de 20 años de experiencia en el mercado."/>
+    <meta name="keywords" content="construcción, viviendas, desarrollos inmobiliarios, obra pública, urbanización, pavimentación, señalización, vialidad, cableado estructurado, galpones industriales"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link de Tipografía de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;1,100&display=swap" rel="stylesheet">
+    <!-- Link de CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- Íconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <!-- Link de CSS propio -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Título del sitio -->
+    <title>PID Construcciones</title>
+</head>
+
+<body>
+  <!-- Contenedor barra de navegación e imagen de fondo -->
+  <section class="container-index">
+    <!-- Barra de navegación Bootstrap-->
+    <nav id="menu-nav" class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/logo.png" alt="Logo PID Construcciones">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Servicios
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                <li><a class="dropdown-item" href="pages/viviendasyedificios.html">Viviendas y Edificios</a></li>
+                <li><a class="dropdown-item" href="pages/proyectosinmobiliarios.html">Proyectos Inmobiliarios</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="pages/obrapublica.html">Obra Pública</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="pages/cableado.html">Cableado estructurado</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="pages/galpones.html">Galpones Industriales</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="pages/contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Título y subtitulo-->
+    <div class="texto-container-index">
+      <div class="h1-container">
+        <h1>
+          PID Construcciones
+        </h1>
+      </div>
+      <div class="h2-container">
+        <h2>
+          Construimos proyectos.
+        </h2>
+        <h2>
+          Cumplimos sueños.
+        </h2>
+      </div>
+    </div>
+  </section>
+
+  <!-- GRID -->
+  <section class="section-grid-index">
+    <!-- Nosotros -->
+    <section class="nosotros">
+      <h3 class="h3">Nosotros</h3>
+      <p>
+        Somos una empresa de diseño, desarrollo y ejecución de proyectos de construcción con más de <strong>20 años de experiencia en el mercado</strong>.
+      </p>
+      <p>
+        Nos comprometemos con nuestros clientes desde el primer contacto, buscando cumplir con estándares 
+        de calidad, respetando el medio ambiente, aplicando las normas vigentes en seguridad y salud en el trabajo,
+        y ejerciendo la responsabilidad social empresarial.
+      </p>
+      <span>
+        <a href="pages/nosotros.html">Ver más</a>  
+      </span>
+    </section>
+    <!-- Proyectos -->
+    <section class="proyectos">
+      <h3 id="h3proyectos">Proyectos Destacados</h3>
+      <div class="card" id="proyecto-1" style="width: 18rem;">
+          <img src="img/proyecto 1.jpg" class="card-img-top" alt="Imagen de proyecto de construcción">
+          <div class="card-body">
+            <h5 class="card-title">Canning</h5>
+            <p class="card-text">Diseño, desarrollo, construcción y control de obra de propiedad residencial.</p>
+            <a href="/pages/proyectos/proyecto1.html" class="btn btn-primary">Ver más</a>
+          </div>
+        </div>
+      <div class="card" id="proyecto-2" style="width: 18rem;">
+          <img src="img/proyecto2.jpg" class="card-img-top" alt="Imagen de proyecto de construcción">
+          <div class="card-body">
+            <h5 class="card-title">Quincho moderno</h5>
+            <p class="card-text">Diseño, planificación y control de obra de quincho en propiedad residencial ubicada en Barrio Privado.</p>
+            <a href="/pages/proyectos/proyecto2.html" class="btn btn-primary">Ver más</a>
+          </div>
+      </div>
+      <div class="card" id="proyecto-3" style="width: 18rem;">
+          <img src="img/proyecto3.jpg" class="card-img-top" alt="Imagen de proyecto">
+          <div class="card-body">
+            <h5 class="card-title">Vivienda</h5>
+            <p class="card-text">Diseño, proyección y ejecución de obra de remodelación de vivienda.</p>
+            <a href="/pages/proyectos/proyecto3.html" class="btn btn-primary">Ver más</a>
+          </div>
+      </div>
+      <div class="card" id="proyecto-4" style="width: 18rem;">
+        <img src="img/proyecto4.jpg" class="card-img-top" alt="Imagen de proyecto de Construcción">
+        <div class="card-body">
+        <h5 class="card-title">Remodelación Comedor</h5>
+        <p class="card-text">Remodelación integral de comedor de niños ubicado en Lugano, CABA.</p>
+        <a href="/pages/proyectos/proyecto4.html" class="btn btn-primary">Ver más</a>
+        </div>
+      </div>
+    </section>
+    <!-- Nuestro futuro -->
+    <section class="futuro">
+      <h3 id="h3-futuro">Nuestro futuro</h3>   
+      <p id="p-futuro">Durante los próximos años continuaremos con  nuestra estrategia de diversificación de portafolio, potenciando nuestra presencia en los nuevos sectores y consolidando nuestra posición en la región. Permanentemente sumamos socios estratégicos que nos permiten crecer de manera sostenida.
+      </p>
+      <div class="iframe1">
+        <!-- SnapWidget -->
+<script src="https://snapwidget.com/js/snapwidget.js"></script>
+<iframe src="https://snapwidget.com/embed/1001099" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:100%; "></iframe>
+      </div>
+    </section>
+  </section>
+
+  <!-- Foooter -->    
+  <footer>
+    <div class="img-footer">
+      <img id="logo-footer" src="img/logofooter.png" alt="logo de PID Construcciones">
+    </div>
+    <div class="derechos">
+      <h5>Todos los derechos reservados ©2022</h5>
+      <h5>PID Construcciones</h5>
+    </div>
+    <div class="desarrollado">
+      <h5>Desarrollado por</h5>
+      <h5>
+        <a href="mailto:cbhumeres@hotmail.com">Carlos Humeres</a>
+      </h5>
+    </div>   
+  </footer>
+
+  <!-- JavaScript BootStrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <!-- Script NavBar efecto Scroll -->
+  <script>
+    var nav = document.getElementById('menu-nav');
+      window.onscroll = function() {
+      if (window.pageYOffset > 100 && window.innerWidth >= 1200) {
+      nav.classList.add("bg-dark");
+      } else {
+      nav.classList.remove("bg-dark");
+      }
+    }
+  </script>
+</body>
+</html>

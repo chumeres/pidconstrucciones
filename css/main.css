@@ -1,0 +1,393 @@
+@charset "UTF-8";
+.titulo, .container-index .texto-container-index .h1-container h1, .section-grid-nosotros h2, .section-grid-servicios h2, .contacto h2 {
+  font-weight: 500;
+  font-size: 2.5rem; }
+
+.subtitulo, .container-index .texto-container-index .h2-container h2, .section-grid-index .nosotros h3, .section-grid-index .proyectos h3, .section-grid-index .proyectos .card .card-body .card-title, .section-grid-index .futuro h3, .section-grid-nosotros h3 {
+  font-weight: 400;
+  font-size: 1.66667rem; }
+
+.parrafo, .section-grid-index .nosotros p, .section-grid-index .proyectos .card .card-body .card-text, .section-grid-index .futuro p, .section-grid-nosotros #p1, .section-grid-nosotros #p2, .section-grid-nosotros .accordion .accordion-button, .section-grid-nosotros .accordion p, .section-grid-servicios p, .contacto p {
+  font-weight: 300;
+  font-size: 1.25rem; }
+
+.footer, footer .derechos h5, footer .desarrollado h5, footer .desarrollado h5 a {
+  font-weight: 300;
+  font-size: 0.83333rem; }
+
+/*Queries*/
+@media screen and (min-width: 768px) {
+  /*NAVBAR*/
+  #menu-nav {
+    flex-wrap: nowrap;
+    justify-content: flex-start; }
+    #menu-nav .nav-item .nav-link {
+      margin: 0 0.75rem 0 0.75rem;
+      font-size: 1.25rem; }
+    #menu-nav .navbar-nav {
+      flex-direction: row; }
+      #menu-nav .navbar-nav .dropdown-menu {
+        position: absolute; }
+    #menu-nav .navbar-nav-scroll {
+      overflow: visible; }
+    #menu-nav .navbar-collapse {
+      display: flex !important;
+      flex-basis: auto; }
+    #menu-nav .navbar-toggler {
+      display: none; }
+  /*INDEX*/
+  .container-index .texto-container-index .h1-container h1 {
+    font-size: 3.75rem; }
+  .container-index .texto-container-index .h2-container h2 {
+    font-size: 2.5rem; }
+  .proyectos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "h3 h3" "proyecto1 proyecto2" "proyecto3 proyecto4"; }
+    .proyectos h3 {
+      grid-area: h3; }
+    .proyectos #proyecto-1 {
+      grid-area: proyecto1; }
+    .proyectos #proyecto-2 {
+      grid-area: proyecto2; }
+    .proyectos #proyecto-3 {
+      grid-area: proyecto3; }
+    .proyectos #proyecto-4 {
+      grid-area: proyecto4; }
+  /*NOSOTROS*/
+  .section-grid-nosotros h2 {
+    font-size: 2.5rem; } }
+
+@media screen and (min-width: 1200px) {
+  /*NAVBAR*/
+  #menu-nav {
+    background-color: transparent;
+    box-shadow: none;
+    transition: 1s; }
+    #menu-nav .nav-item:hover {
+      background-color: #5B5245;
+      transition: 1s;
+      border-radius: 10px; }
+  #menu-nav-bg {
+    transition: 1s; }
+    #menu-nav-bg .nav-item:hover {
+      background-color: #5B5245;
+      transition: 1s;
+      border-radius: 10px; }
+  /*INDEX*/
+  body .container-index {
+    justify-content: start; }
+    body .container-index .texto-container-index .h1-container h1 {
+      font-size: 5rem;
+      border-radius: 0px 10px 10px 0px;
+      transition: 2s;
+      transition-timing-function: ease-in-out; }
+      body .container-index .texto-container-index .h1-container h1:hover {
+        background-color: transparent; }
+    body .container-index .texto-container-index .h2-container h2 {
+      font-size: 2.5rem;
+      border-radius: 0px 10px 10px 0px;
+      transition: 2s;
+      transition-timing-function: ease-in-out; }
+      body .container-index .texto-container-index .h2-container h2:hover {
+        background-color: transparent;
+        color: #FCFFE7; }
+  body .section-grid-index {
+    /*INDEX-Nosotros*/ }
+    body .section-grid-index .nosotros {
+      height: 70vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      body .section-grid-index .nosotros .h3 {
+        font-size: 3.33333rem; }
+      body .section-grid-index .nosotros span a {
+        font-size: 1.875rem;
+        color: #CE9461; }
+    body .section-grid-index .proyectos {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-areas: "h3 h3 h3 h3" "proyecto1 proyecto2 proyecto3 proyecto4"; }
+      body .section-grid-index .proyectos #h3proyectos {
+        grid-area: h3;
+        font-size: 3.33333rem; }
+    body .section-grid-index .futuro {
+      justify-items: center;
+      justify-content: center;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "h3 h3" "p p" "iframe1 iframe1"; }
+      body .section-grid-index .futuro #h3-futuro {
+        grid-area: h3;
+        font-size: 3.33333rem; }
+      body .section-grid-index .futuro #p-futuro {
+        grid-area: p;
+        margin: 1rem; }
+      body .section-grid-index .futuro .iframe1 {
+        grid-area: iframe1; }
+  /*NOSOTROS*/
+  .section-grid-nosotros h2 {
+    font-size: 2.5rem; }
+  /*FOOTER*/
+  footer .img-footer #logo-footer {
+    width: 20%;
+    transition: 1s; }
+    footer .img-footer #logo-footer:hover {
+      filter: brightness(10); }
+  footer .derechos h5 {
+    font-size: 0.83333rem; }
+  footer .desarrollado {
+    grid-area: desarrollado; }
+    footer .desarrollado h5 {
+      font-size: 0.83333rem; }
+      footer .desarrollado h5 a {
+        font-size: 0.83333rem; } }
+
+/*Barra de navegación*/
+#menu-nav-bg {
+  background-color: #CE9461; }
+
+.navbar {
+  background-color: #CE9461;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-weight: 300;
+  font-size: 1rem; }
+  .navbar .nav-item .nav-link {
+    color: #FCFFE7; }
+  .navbar .nav-item .dropdown-menu {
+    background-color: #f2f2f2;
+    text-align: center;
+    --bs-dropdown-link-active-bg:$color-claro; }
+    .navbar .nav-item .dropdown-menu .dropdown-item {
+      font-weight: 300;
+      font-size: 1rem; }
+
+.navbar-nav-scroll {
+  max-height: 100vh; }
+
+/*Carrusel */
+.carousel {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5); }
+
+/*Botón Primario - Formato*/
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #d5b98b;
+  --bs-btn-border-color: #caa56a;
+  --bs-btn-hover-bg: #caa56a;
+  --bs-btn-hover-border-color: #caa56a;
+  --bs-btn-focus-shadow-rgb: #caa56a;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #caa56a;
+  --bs-btn-active-border-color: #caa56a; }
+  .btn-primary:hover {
+    --bs-btn-hover-bg: #817561;
+    --bs-btn-hover-border-color: #e9ca99;
+    --bs-btn-focus-shadow-rgb: #caa56a; }
+
+/*Accordion - Formato*/
+.accordion {
+  --bs-accordion-active-bg: #a89679;
+  width: 90%;
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem #cec5b6; }
+
+.accordion-button:not(.collapsed) {
+  color: #f8f9fa; }
+
+/*FOOTER*/
+footer {
+  background-color: #DEA057;
+  align-items: center;
+  padding: 1rem;
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "logo derechos derechos desarrollado"; }
+  footer .img-footer {
+    grid-area: logo; }
+  footer .derechos {
+    grid-area: derechos; }
+  footer .desarrollado {
+    grid-area: desarrollado; }
+    footer .desarrollado h5 a {
+      text-decoration: none;
+      color: #FCFFE7; }
+
+/*Reset*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+/* Eliminación de bullets y números en listas */
+ol {
+  list-style-type: none; }
+
+ul {
+  list-style-type: none; }
+
+/*BODY*/
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f2f2f2; }
+
+/*INDEX*/
+/*Contenedor barra de navegación e imagen de fondo*/
+.container-index {
+  background-image: url(https://pidconstrucciones.com/imagenes/container-index.png);
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .container-index .texto-container-index .h1-container h1 {
+    color: #FCFFE7;
+    padding: 0.4rem 0.3rem 0.3rem 0.3rem;
+    background-color: #CE9461;
+    border-radius: 5px; }
+  .container-index .texto-container-index .h2-container {
+    display: inline-block; }
+    .container-index .texto-container-index .h2-container h2 {
+      color: #5B5245;
+      padding: 0.2rem 0.2rem 0.2rem 0.4rem;
+      background-color: #f2f2f2;
+      width: fit-content;
+      border-radius: 5px;
+      animation: backwards;
+      justify-content: center; }
+
+/*GRID*/
+.section-grid-index {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+  grid-template-areas: "nosotros" "proyectos-destacados" "futuro"; }
+  .section-grid-index .nosotros {
+    background-image: url(https://pidconstrucciones.com/imagenes/container-nosotros.png);
+    background-size: cover;
+    background-position: center;
+    grid-area: nosotros;
+    padding: 1rem; }
+    .section-grid-index .nosotros span a {
+      text-decoration: none;
+      font-weight: 300; }
+  .section-grid-index .proyectos {
+    background-color: #242424;
+    grid-area: proyectos-destacados;
+    padding: 1rem;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    justify-items: center; }
+    .section-grid-index .proyectos h3 {
+      color: #FCFFE7;
+      margin-top: 0.5rem; }
+    .section-grid-index .proyectos .card {
+      padding: 1rem; }
+      .section-grid-index .proyectos .card .card-body .card-title {
+        font-size: 1.38889rem; }
+      .section-grid-index .proyectos .card .card-img-top {
+        border-radius: 200px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5); }
+  .section-grid-index .futuro {
+    padding: 1rem;
+    grid-area: futuro;
+    justify-items: center;
+    align-items: center;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    grid-template-areas: "h3" "p" "iframe"; }
+    .section-grid-index .futuro h3 {
+      grid-area: h3; }
+    .section-grid-index .futuro p {
+      grid-area: p; }
+    .section-grid-index .futuro .iframe1 {
+      grid-area: iframe;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+    .section-grid-index .futuro .iframe2 {
+      display: none;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+
+/*NOSOTROS*/
+.section-grid-nosotros {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+  justify-items: center;
+  margin-top: 5rem;
+  padding: 1rem;
+  grid-template-areas: "h2" "p1" "p2" "h3" "accordion"; }
+  .section-grid-nosotros h2 {
+    grid-area: h2; }
+  .section-grid-nosotros #p1 {
+    grid-area: p1; }
+  .section-grid-nosotros #p2 {
+    grid-area: p2; }
+  .section-grid-nosotros h3 {
+    grid-area: h3; }
+  .section-grid-nosotros .accordion {
+    grid-area: accordion; }
+    .section-grid-nosotros .accordion .accordion-img {
+      display: none;
+      margin: 1rem;
+      width: 30%; }
+
+/*SERVICIOS*/
+.section-grid-servicios {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+  margin-top: 6rem;
+  padding: 1rem;
+  grid-template-areas: "titulo" "parrafo" "carrousel"; }
+  .section-grid-servicios h2 {
+    grid-area: titulo; }
+  .section-grid-servicios p {
+    grid-area: parrafo; }
+  .section-grid-servicios #carouselExampleIndicators {
+    grid-area: carrousel; }
+
+/*CONTACTO*/
+.contacto {
+  margin-top: 5rem;
+  padding: 1rem;
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+  grid-template-areas: "h2" "p1" "datos" "form"; }
+  .contacto h2 {
+    grid-area: h2; }
+  .contacto p {
+    grid-area: p1; }
+  .contacto .datos-contacto {
+    grid-area: datos; }
+    .contacto .datos-contacto ul {
+      padding: 0;
+      display: flex;
+      justify-content: center; }
+      .contacto .datos-contacto ul li a {
+        text-decoration: none;
+        color: #5B5245;
+        padding: 1rem;
+        font-size: 2rem; }
+  .contacto .form-contacto {
+    margin-top: 1rem;
+    grid-area: form; }

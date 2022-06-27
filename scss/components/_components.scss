@@ -1,0 +1,61 @@
+/*Barra de navegación*/
+    #menu-nav-bg {
+        background-color: $color-principal;
+    }
+    .navbar {
+        background-color: $color-principal;
+        box-shadow: $sombra-suave;
+        text-align: center;
+        font-weight: 300;
+        font-size: $parrafo/1.25;     
+        .nav-item {
+            .nav-link {
+                color: $color-claro;
+            }
+            .dropdown-menu {
+                background-color: $bg;
+                text-align: center;
+                --bs-dropdown-link-active-bg:$color-claro;
+                .dropdown-item{
+                    font-weight: 300;
+                    font-size: $parrafo/1.25;
+                }
+            }
+        }
+    }
+    .navbar-nav-scroll {
+        max-height: 100vh;
+    }
+
+/*Carrusel */
+    .carousel {
+        box-shadow:  $sombra-fuerte;
+    }
+
+/*Botón Primario - Formato*/
+    .btn-primary {
+        --bs-btn-color: #fff;
+        --bs-btn-bg: #d5b98b;
+        --bs-btn-border-color: #caa56a;
+        --bs-btn-hover-bg: #caa56a;
+        --bs-btn-hover-border-color: #caa56a;
+        --bs-btn-focus-shadow-rgb: #caa56a;
+        --bs-btn-active-color: #fff;
+        --bs-btn-active-bg: #caa56a;
+        --bs-btn-active-border-color: #caa56a;
+        &:hover {
+            --bs-btn-hover-bg: #817561;
+            --bs-btn-hover-border-color: #e9ca99;
+            --bs-btn-focus-shadow-rgb: #caa56a;
+        }
+    }
+
+/*Accordion - Formato*/
+    .accordion {
+        --bs-accordion-active-bg: #a89679;
+        width: 90%;
+        --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem #cec5b6;
+        }
+    .accordion-button:not(.collapsed) {
+            color: #f8f9fa;
+    }

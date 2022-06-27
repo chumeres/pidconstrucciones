@@ -1,0 +1,31 @@
+    /*FOOTER*/
+    footer {
+        background-color: $color-secundario;
+        align-items: center;
+        padding: 1rem;
+        @include grid-center;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "logo derechos derechos desarrollado";
+        .img-footer {
+            grid-area: logo;
+        }
+        .derechos {
+            h5 {
+                @extend .footer;
+            }
+            grid-area: derechos;
+        }
+        .desarrollado {
+            grid-area: desarrollado;
+            h5 {
+                @extend .footer;
+                a {
+                    @extend .footer;
+                    text-decoration: none;
+                    color: $color-claro;
+                }
+            }
+            
+        }
+    }

@@ -1,0 +1,37 @@
+//Colores
+$color-principal: #CE9461;
+$color-secundario: #DEA057;
+$color-terciario: #E0D8B0;
+$color-claro: #FCFFE7;
+$color-oscuro: #5B5245;
+$bg: #f2f2f2;
+$bg-oscuro: #242424;
+
+//Sombras
+$sombra-fuerte: 5px 5px 5px rgba(0, 0, 0, 0.5);
+$sombra-suave: 0px 0px 5px rgba(0, 0, 0, 0.5);
+$sombra-boton: 1px 1px 5px rgba(0, 0, 0, 0.5);
+
+//Medidas
+    //Tipografías
+    $titulo: 2.5rem;
+    $subtitulo: ( $titulo / 1.5);
+    $parrafo: ( $titulo / 2);
+    $footer: ( $titulo / 3);
+    //Extend
+    .titulo {
+        font-weight: 500;
+        font-size: $titulo;
+    }
+    .subtitulo {
+        font-weight: 400;
+        font-size: $subtitulo;
+    }
+    .parrafo {
+        font-weight: 300;
+        font-size: $parrafo;
+    }
+    .footer {
+        font-weight: 300;
+        font-size: $footer;
+    }

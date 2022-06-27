@@ -1,0 +1,256 @@
+//Imports
+@import "base/variables";
+@import "base/medias";
+@import "base/mixins";
+@import "components/components";
+@import "components/footer";
+/*Reset*/
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+/* Eliminación de bullets y números en listas */
+    ol {
+        list-style-type: none;
+    }
+    ul {
+        list-style-type: none;
+    }
+/*BODY*/
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color:$bg;
+}
+/*INDEX*/
+    /*Contenedor barra de navegación e imagen de fondo*/
+        .container-index {
+            background-image:url(https://pidconstrucciones.com/imagenes/container-index.png);
+            height: 100vh;
+            background-size:cover;
+            background-attachment: fixed;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .texto-container-index {
+                .h1-container {
+                    h1 {
+                        @extend .titulo;
+                        color: $color-claro;
+                        padding: 0.4rem 0.3rem 0.3rem 0.3rem;
+                        background-color: $color-principal;
+                        border-radius: 5px;
+                    }
+                }
+                .h2-container {
+                    display: inline-block;
+                    h2 {
+                        @extend .subtitulo;
+                        color: $color-oscuro;
+                        padding: 0.2rem 0.2rem 0.2rem 0.4rem;
+                        background-color: $bg;
+                        width: fit-content;
+                        border-radius: 5px;
+                        animation: backwards;
+                        justify-content: center;
+                    }
+                }
+            }          
+        }
+    /*GRID*/
+        .section-grid-index {
+            @include grid-center;
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+            "nosotros"
+            "proyectos-destacados"
+            "futuro"
+            ;
+            .nosotros {
+                background-image: url(https://pidconstrucciones.com/imagenes/container-nosotros.png);
+                background-size:cover;
+                background-position: center;
+                grid-area: nosotros;
+                padding: 1rem;
+                h3 {
+                    @extend .subtitulo;
+                }
+                p {
+                    @extend .parrafo;
+                }
+                span {
+                    a {
+                        text-decoration: none;
+                        font-weight: 300;
+                    }
+                }
+            }
+            .proyectos {
+                background-color: $bg-oscuro;
+                grid-area: proyectos-destacados;
+                padding: 1rem;
+                @include grid-center;
+                justify-items: center;
+                h3 {
+                    @extend .subtitulo;
+                    color: $color-claro;
+                    margin-top: 0.5rem;
+                }
+                .card {
+                    padding: 1rem;
+                    .card-body {
+                        .card-title {
+                            @extend .subtitulo;
+                            font-size: $titulo /1.8;
+                            }
+                        .card-text {
+                            @extend .parrafo;
+                        }
+                    }
+                    .card-img-top{
+                        border-radius: 200px;
+                        box-shadow: $sombra-fuerte;
+                    }
+                }
+
+            }
+            .futuro {
+                padding: 1rem;
+                grid-area:futuro;
+                justify-items: center;
+                align-items: center;
+                @include grid-center;
+                grid-template-areas: 
+                "h3"
+                "p"
+                "iframe";
+                h3 {
+                    @extend .subtitulo;
+                    grid-area: h3;
+                    
+                }
+                p {
+                    @extend .parrafo;
+                    grid-area: p;
+                }
+                .iframe1 {
+                    grid-area: iframe;
+                    width: 100%;
+                    @include flex-row-center;
+                }
+                .iframe2 {
+                    display: none;
+                    width: 100%;
+                    @include flex-row-center;
+                }
+        }
+    }    
+
+/*NOSOTROS*/
+    .section-grid-nosotros {
+        @include grid-center;
+        justify-items: center;
+        margin-top: 5rem;
+        padding: 1rem;
+        grid-template-areas:
+        "h2"
+        "p1"
+        "p2"
+        "h3"
+        "accordion";
+        h2 {
+            grid-area: h2;
+            @extend .titulo;
+        }
+        #p1 {
+            grid-area: p1;
+            @extend .parrafo;
+        }
+        #p2 {
+            grid-area: p2;
+            @extend .parrafo;
+        }
+        h3 {
+            grid-area: h3;
+            @extend .subtitulo;
+        }
+        .accordion {
+            grid-area: accordion;
+            .accordion-button {
+                @extend .parrafo;
+            }
+            .accordion-img {
+                display: none;
+                margin: 1rem;
+                width: 30%;
+            }
+            p {
+                @extend .parrafo;
+            }
+        }
+    }
+/*SERVICIOS*/
+.section-grid-servicios {
+    @include grid-center;
+    margin-top: 6rem;
+    padding: 1rem;
+    grid-template-areas: 
+    "titulo"
+    "parrafo"
+    "carrousel"
+    ;
+    h2 {
+        grid-area: titulo;
+        @extend .titulo;
+    }
+    p {
+        grid-area: parrafo;
+        @extend .parrafo;
+    }
+    #carouselExampleIndicators {
+        grid-area: carrousel;
+    }
+}
+
+/*CONTACTO*/
+.contacto {
+    margin-top: 5rem;
+    padding: 1rem;
+    @include grid-center;
+    grid-template-areas: 
+    "h2"
+    "p1"
+    "datos"
+    "form"
+    ;
+    h2 {
+        @extend .titulo;
+        grid-area: h2;
+    }
+    p {
+        @extend .parrafo;
+        grid-area: p1;
+    }
+    .datos-contacto{
+        grid-area: datos;
+        ul {
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            li {
+                a{
+                    text-decoration: none;
+                    color: $color-oscuro;
+                    padding: 1rem;
+                    font-size: 2rem;
+                }
+                
+            }
+        }
+    }
+    .form-contacto {
+        margin-top: 1rem;
+        grid-area: form;
+    }
+}
